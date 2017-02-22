@@ -1,0 +1,11 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+
+h1, h2, h5 {
+	font-family: 'Fjalla One', sans-serif;
+}
