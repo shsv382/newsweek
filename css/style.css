@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
-@import url('../fonts/glyphicons-halflings-regular.woff2');
-@font-face {
-    font-family: glyphicons-halflings-regular; /* Имя шрифта */
-    src: url('../fonts/glyphicons-halflings-regular.ttf'); /* Путь к файлу со шрифтом */
-   }
+@import url('../fonts/glyphicons-halflings-regular.ttf');
 
 h1, h2, h5 {
 	font-family: 'Fjalla One', sans-serif;
@@ -30,13 +26,12 @@ h1, h2, h5 {
 	color: white;
 }
 
-.glyphicon .glyphicon-search {
-	font-family: glyphicons-halflings-regular;
+.glyphicon {
+	font-family: serif;
 }
 
 nav > ul > li {
 	font-family: sans-serif;
-	text-transform: uppercase;
 	font-weight: bold;
 	border-top: 3px solid black;
 	border-bottom: 3px solid black;
