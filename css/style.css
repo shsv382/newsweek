@@ -1,9 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
-@import url('../fonts/glyphicons-halflings-regular.ttf');
+@import url('../fonts/glyphicons-halflings-regular.woff2');
+@font-face {
+    font-family: glyphicons-halflings-regular; /* Имя шрифта */
+    src: url('../fonts/glyphicons-halflings-regular.ttf'); /* Путь к файлу со шрифтом */
+   }
 
 h1, h2, h5 {
 	font-family: 'Fjalla One', sans-serif;
 }
+
+body {
+	padding-bottom: 100px;
+}
+
+/* Navigation bar */
 
 .brend-red {
 	background: url(https://g.europe.newsweek.com/www/img/redesign/sprite.png);
@@ -26,12 +36,13 @@ h1, h2, h5 {
 	color: white;
 }
 
-.glyphicon {
-	font-family: serif;
+.glyphicon .glyphicon-search {
+	font-family: glyphicons-halflings-regular;
 }
 
 nav > ul > li {
 	font-family: sans-serif;
+	text-transform: uppercase;
 	font-weight: bold;
 	border-top: 3px solid black;
 	border-bottom: 3px solid black;
@@ -39,4 +50,105 @@ nav > ul > li {
 
 nav > ul > li:hover {
 	border-bottom: 3px solid red;
+}
+
+/* Articles section */
+
+.bor {
+	border: 1px dotted red;
+	min-height: 100px;
+}
+
+.art-header {
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+	margin: auto;
+	cursor: pointer;
+}
+
+.header {
+	border-top: 2px solid red;
+	position: relative;
+	top: -70px;
+	background: linear-gradient(to top, white, rgba(200, 200, 200, 0.96));
+	padding-bottom: 20px;
+}
+
+h3.art-header {
+	color: red;
+	font-size: 1em;
+	padding-top: 15px;
+	width: 20%;
+}
+
+h2.art-header {
+	padding-top: 5px;
+	color: black;
+	font-size: 2em;
+	width: 80%;
+}
+
+h2:hover, h3:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+.header > p, .mini-art-header > p {
+	padding-top: 15px;
+	cursor: auto;
+	text-transform: none;
+	font-size: 1.125em;
+	width: 80%;
+	font-weight: 300;
+}
+
+h4 {
+	font-size: 1.5em;
+	color: #222;
+}
+
+ul.news {
+	list-style-type: square;
+	text-align: left;
+}
+
+ul.news > li {
+	padding: 1em;
+	font-weight: bold;
+	border-top: 1px solid #e5e5e5;
+	cursor: pointer;
+}
+
+ul.news > li:hover {
+	text-decoration: underline;
+}
+
+ul.news> li:first-child {
+	border: none;
+}
+
+h2.mini-art-header {
+	color: black;
+	font-size: 1.5em;
+	width: 90%;
+	letter-spacing: .02em;
+}
+
+h2.mini-art-header, h3.mini-art-header, p.mini-art-header {
+	width: 90%;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	padding-top: 7px;
+}
+
+div.mini-art-header {
+	margin-top: 10px;
+}
+
+.subscribe {
+	display: block;
+	margin: auto;
+	background-color: #e5e5e5;
 }
