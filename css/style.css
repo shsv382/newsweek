@@ -34,6 +34,7 @@ body {
 
 .navbar-inverse .navbar-nav > li > a {
 	color: white;
+	font-size: .7em;
 }
 
 .glyphicon .glyphicon-search {
@@ -56,7 +57,6 @@ nav > ul > li:hover {
 
 .bor {
 	border: 1px dotted red;
-	min-height: 100px;
 }
 
 .art-header {
@@ -151,4 +151,25 @@ div.mini-art-header {
 	display: block;
 	margin: auto;
 	background-color: #e5e5e5;
+}
+
+
+li.min {
+	display: relative;
+}
+
+li.hidden {
+	display: none;
+}
+
+@media screen and (max-width: 1376px) {
+	li.max {
+		display: none;
+	}
+}
+
+h1 {
+	display: inline-block;
+	padding-top: 1.5em;
+	border-bottom: 2px solid red;
 }
